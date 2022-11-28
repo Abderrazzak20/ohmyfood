@@ -1,0 +1,240 @@
+@-webkit-keyframes rotazione {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes rotazione {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes Rotazione1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes Rotazione1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+header i {
+  position: absolute;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  top: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  color: #000;
+}
+
+.scova img {
+  width: 100%;
+  height: 27rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -20px;
+}
+
+.capo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #eaeaea;
+  position: relative;
+  margin-top: -4rem;
+  border-radius: 3rem 3rem 0;
+}
+.capo .titolo {
+  position: relative;
+}
+.capo .titolo .cuore {
+  position: absolute;
+  right: 20px;
+  font-size: 28px;
+  bottom: 3px;
+}
+.capo .titolo .cuore .hover {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  font-size: 28px;
+  color: violet;
+  bottom: 3px;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.capo .titolo .cuore:hover .hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+}
+.capo .capo-display {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 1300px) {
+  .capo .capo-display {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.capo .capo-display .menu-display {
+  margin: -1rem;
+  width: -webkit-fill-available;
+}
+.capo .capo-display .menu-display h3 {
+  padding: 0rem 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.capo .capo-display .menu-display .sottotitolo {
+  display: flex;
+  -webkit-animation: apparizione 3s;
+          animation: apparizione 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  flex-grow: 1;
+  border-radius: 1rem;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(0) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(1) {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.capo .capo-display .menu-display .sottotitolo:nth-child(5) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+@-webkit-keyframes apparizione {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparizione {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.capo .capo-display .menu-display .sottotitolo:hover {
+  cursor: pointer;
+}
+.capo .capo-display .menu-display .sottotitolo:hover .controllo {
+  transition: all 0.5s;
+  margin-right: 0rem;
+}
+.capo .capo-display .menu-display .sottotitolo:hover i {
+  -webkit-animation: rotazione 1s;
+          animation: rotazione 1s;
+}
+.capo .capo-display .menu-display .sottotitolo .sottotitolo-sotto,
+.capo .capo-display .menu-display .sottotitolo .prezzo {
+  padding: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.capo .capo-display .menu-display .sottotitolo .controllo {
+  width: 4rem;
+  background: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  margin-right: -4rem;
+  display: grid;
+  place-items: center;
+  min-width: 53px;
+}
+.capo .capo-display .menu-display .sottotitolo .controllo i {
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  text-shadow: -1px 0 #99e2d0, 0 1px #99e2d0, 1px 0 #99e2d0, 0 -1px #99e2d0;
+  color: #99e2d0;
+}
+.capo .capo-display .menu-display p {
+  padding: 0rem;
+  margin: 0 7px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.capo .capo-display .menu-display h4 {
+  padding: 0rem;
+  margin: 0 7px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.capo .capo-display .menu-display .prezzo {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.comanda {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem;
+}
+.comanda button {
+  padding: 15px 38px;
+  border-radius: 2rem;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: 0.5s;
+  font-size: large;
+  border: transparent;
+}
+.comanda button:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 43px 10px rgba(238, 130, 238, 0.75);
+  -webkit-box-shadow: 4px 4px 43px 10px rgba(238, 130, 238, 0.75);
+  -moz-box-shadow: 4px 4px 43px 10px rgba(238, 130, 238, 0.75);
+}/*# sourceMappingURL=restaurant.css.map */

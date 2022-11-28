@@ -1,0 +1,77 @@
+.menu {
+  padding: 3rem 1rem;
+  background-color: #eaeaea;
+}
+.menu .quadro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.menu .quadro .carta {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 1rem;
+  position: relative;
+  background-color: white;
+  flex-basis: 100%;
+  box-shadow: -5px 11px 19px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 11px 19px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 11px 19px 1px rgba(0, 0, 0, 0.75);
+}
+@media (min-width: 976px) {
+  .menu .quadro .carta {
+    min-width: 32rem;
+    flex-basis: min-content;
+  }
+}
+.menu .quadro .carta a {
+  color: black;
+  text-decoration: none;
+}
+.menu .quadro .carta h3 {
+  margin: 0 16px;
+}
+.menu .quadro .carta p {
+  margin-top: 5px;
+  margin-left: 16px;
+  text-decoration: none;
+}
+.menu .quadro .carta .cuore {
+  position: absolute;
+  right: 20px;
+  font-size: 28px;
+  bottom: 30px;
+}
+.menu .quadro .carta .cuore .hover {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  font-size: 28px;
+  color: violet;
+  bottom: 3px;
+  transition-duration: 1s;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu .quadro .carta .cuore:hover .hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+}
+.menu .quadro .carta .immagine img {
+  height: 12rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.menu .quadro .carta span {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  background-color: #99e2d0;
+  padding: 0.5rem 1rem;
+  color: #1b6150;
+}/*# sourceMappingURL=menu.css.map */

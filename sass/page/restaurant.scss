@@ -1,0 +1,180 @@
+@use "../util/animazioni.scss";
+header{
+    i{    position: absolute;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
+        top: 43%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        font-size: 2.2rem;
+        color: #000;
+    }
+}
+.scova img{
+    width: 100%;
+    height: 27rem;
+    object-fit: cover;
+    position: relative;
+    top: -20px;
+}
+.capo{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    background-color: #eaeaea;
+    position: relative;
+    margin-top: -4rem;
+    border-radius: 3rem 3rem 0;
+
+.titolo{
+position: relative;
+.cuore{
+        position: absolute;
+        right: 20px;
+        font-size: 28px;
+        bottom: 3px;
+        
+    
+    
+.hover{
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    font-size: 28px;
+    color: violet;
+    bottom:3px;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}   
+&:hover .hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+} 
+}
+}
+.capo-display{
+    display: flex;
+    gap: 2rem;
+    @media (max-width: 1300px) { 
+        display: flex;
+        flex-direction: column;   
+    }
+.menu-display{
+margin: -1rem;
+width: -webkit-fill-available;
+h3{
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.sottotitolo{
+    
+    @for $i from 0 to 6 {
+        &:nth-child(#{$i}){
+        animation-delay: 150ms*$i;
+            
+        }
+        
+    }
+    display: flex;
+    @include animazioni.apparizione;
+    animation: apparizione 3s;
+    animation-fill-mode: both;
+    flex-grow: 1;
+    border-radius: 1rem;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -2px 0px inset;
+    &:hover{
+        cursor: pointer;
+        .controllo{
+        transition: all 0.5s;
+        margin-right: 0rem;
+       }i{
+        animation: rotazione 1s;
+        }
+    }
+    .sottotitolo-sotto,
+.prezzo{
+  padding: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.controllo{
+    width: 4rem;
+    background: #99e2d0;
+    border-radius: 0 1rem 1rem 0;
+    margin-right: -4rem;
+    display: grid;
+    place-items: center;
+    min-width: 53px;
+i{
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    text-shadow: -1px 0 #99e2d0, 0 1px #99e2d0, 1px 0 #99e2d0, 0 -1px #99e2d0;
+    color: #99e2d0;
+}
+}
+}
+p{
+    padding: 0rem;
+    margin: 0 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+h4{
+    padding: 0rem;
+    margin: 0 7px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.prezzo{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: flex-end;
+    font-weight: bold;
+}
+}
+}
+}
+
+.comanda{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem;
+    
+button{
+    padding: 15px 38px;
+    border-radius: 2rem;
+    color:white;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    transition: 0.5s;
+    font-size: large;
+    border: transparent;
+    &:hover{
+        cursor: pointer;
+        box-shadow: 4px 4px 43px 10px rgba(238,130,238,0.75);
+    -webkit-box-shadow: 4px 4px 43px 10px rgba(238,130,238,0.75);
+    -moz-box-shadow: 4px 4px 43px 10px rgba(238,130,238,0.75);
+   
+}
+}
+}

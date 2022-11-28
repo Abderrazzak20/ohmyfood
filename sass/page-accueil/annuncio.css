@@ -1,0 +1,24 @@
+.annuncio {
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+.annuncio button {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 500;
+  font-size: medium;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: 0.5s;
+  border: transparent;
+}
+.annuncio button:hover {
+  background-color: #fff;
+  filter: brightness(1.02);
+  box-shadow: 7px 8px 30px rgb(255, 121, 218);
+}
+.annuncio p {
+  font-weight: 300;
+}/*# sourceMappingURL=annuncio.css.map */

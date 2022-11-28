@@ -1,0 +1,17 @@
+.piedi {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #353535;
+  color: white;
+}
+.piedi a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+.piedi a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=footer.css.map */

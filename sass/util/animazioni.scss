@@ -1,0 +1,42 @@
+@mixin apparizione {
+ @keyframes apparizione {
+        0% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+}
+}   
+    
+}
+@keyframes rotazione {
+    0% {
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+     }
+
+@keyframes Rotazione1 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+    
+
+@keyframes carica {
+    0%{ visibility: visible;
+        opacity: 1;
+
+    }
+            100%{
+                visibility: hidden;
+                opacity: 0;
+                z-index: -1;
+                
+                
+}
+}

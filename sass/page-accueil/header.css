@@ -1,0 +1,31 @@
+.caricamento {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  opacity: 0.9;
+  -webkit-animation: carica 7s forwards;
+          animation: carica 7s forwards;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.cerchio {
+  position: relative;
+  font-size: xx-large;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 1px 3px 1px lightgrey;
+  position: relative;
+  margin: auto;
+  padding: 0.3rem;
+}/*# sourceMappingURL=header.css.map */

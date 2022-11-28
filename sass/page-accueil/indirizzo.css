@@ -1,0 +1,14 @@
+.indirizzo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  gap: 1rem;
+}
+.indirizzo i {
+  font-size: x-large;
+}
+.indirizzo h3 {
+  font-weight: normal;
+  font-weight: 400;
+}/*# sourceMappingURL=indirizzo.css.map */

@@ -1,0 +1,48 @@
+@-webkit-keyframes rotazione {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes rotazione {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes Rotazione1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes Rotazione1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes carica {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes carica {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+}/*# sourceMappingURL=animazioni.css.map */
